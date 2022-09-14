@@ -1,21 +1,12 @@
-From: https://www.codewars.com/kata/62eb800ba29959001c07dfee/go
+## From: https://www.codewars.com/kata/58ca658cc0d6401f2700045f/train/go
 
-```
-One of the common ways of representing color is the RGB color model, in which the Red, Green, and Blue primary colors of light are added together in various ways to reproduce a broad array of colors.
+Build a program that takes a value `integer` and returns a slice of its multiples up to another value `limit`. 
 
-One of the ways to determine brightness of a color is to find the value V of the alternative HSV (Hue, Saturation, Value) color model. Value is defined as the largest component of a color:
+If `limit` is a multiple of integer, it should be included as well. 
 
-V = max(R,G,B)
-You are given a list of colors in 6-digit hexidecimal notation #RRGGBB. Return the brightest of these colors!
+There will only ever be positive integers passed into the function, not consisting of 0. 
 
-For example,
+The `limit` will always be higher than the base.
 
-brightest(["#001000", "#000000"]) == "#001000"
-brightest(["#ABCDEF", "#123456"]) == "#ABCDEF"
-If there are multiple brightest colors, return the first one:
-
-brightest(["#00FF00", "#FFFF00", "#01130F"]) == "#00FF00"
-Note that both input and output should use upper case for characters A, B, C, D, E, F.
-```
-
-
+For example, if the parameters passed are (2, 6), the function should return [2, 4, 6] as 2, 4, 
+and 6 are the multiples of 2 up to 6.

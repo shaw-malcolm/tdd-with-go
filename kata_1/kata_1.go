@@ -1,5 +1,5 @@
 package kata1
 
-func kata1() string {
-	return ""
+func kata1(integer, limit) []int {
+	return nil
 }
