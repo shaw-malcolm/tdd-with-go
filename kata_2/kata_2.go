@@ -1,5 +1,10 @@
 package kata2
 
-func kata2() string {
-	return "Hello, World"
+import (
+	"strings"
+)
+
+func kata2(str string) string {
+	strUpper := strings.ToUpper(str)
+	return strUpper
 }
